@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Choc o lat</title>
+  <link type= "text/css" rel = "stylesheet" href = "Choc o lat CSS.css">
+  <img src = "images\Choc o lat logo.jpg" alt = "Logo" style = "width:300px; height:200px;">
+
+  <script>
+  function myFunction(){
+    let text;
+	let person = prompt("Please enter your name");
+	if (person == null || person == "") {
+	   text = "You cancelled this action.";
+	 }  else {
+	    text = "Welcome to Choc o lat " + person + "! We hope you enjoy your shopping experience all feedback is welcome :).";
+	 }
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo").style.fontSize = "x-large";
+}
+  </script>
+  
+</head>
+<body>
+
+<div class = "navbar">
+<ul>
+  <li style = "font-size: 25px;"><a href = "Choc o lat.html">Home</a></li>
+  <li style = "font-size: 25px;"><a href = "shopping cart.html">Order a bar</a></li>
+  <li style = "font-size: 25px;"><a href = "Explore.html">Explore</a></li>
+  <li style = "font-size: 25px;"><a href = "About Us.html">About Us</a></li>
+  <li style = "font-size: 25px;"><a href = "Support.html">Support</a></li>
+</ul>
+</div>
+<br>
+<button id = "button" onclick="myFunction()">Hi!</button>
+<p id="demo"></p>
+
+<img src = "images\home.jpg" class = "center">
+<br>
+<br>
+<audio controls>
+  <source src="" type="audio/ogg">
+  <source src="" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Support</title>
+  <link type= "text/css" rel = "stylesheet" href = "Choc o lat CSS.css">
+  <img src = "images\Choc o lat logo.jpg" alt = "Logo" style = "width:300px; height:200px;">
+  <script>
+  function validateForm() {
+     let x = document.forms["Supportfrm"]["firstname"].value;
+	 if (x == "") {
+	 alert("Please enter your first name!");
+	 return false;
+   }
+	 
+	 var y = document.forms["Supportfrm"]["lastname"].value;
+     if (y=="") {
+     alert("Please enter your last name!");
+     return false;
+}
+
+     var y = document.forms["Supportfrm"]["email"].value;
+     if (y=="") {
+     alert("Please enter your email!");
+     return false;
+}
+
+     alert("Thank you for your query!");
+}
+</script>
+</head>
+<body>
+
+<div class = "navbar">
+<ul>
+  <li style = "font-size: 25px;"><a href = "Choc o lat.html">Home</a></li>
+  <li style = "font-size: 25px;"><a href = "shopping cart.html">Order a bar</a></li>
+  <li style = "font-size: 25px;"><a href = "Explore.html">Explore</a></li>
+  <li style = "font-size: 25px;"><a href = "About Us.html">About Us</a></li>
+  <li style = "font-size: 25px;"><a href = "Support.html">Support</a></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<p style= "text-align:left; font-size:21px; font-weight: bold; color: white;">You can contact us by using this form about any inconvinces from issues ordering your chocolate to problems with our services.</p>
+
+<br>
+<!--Form-->
+<form name="Supportfrm" autocomplete = "off" onsubmit="return validateForm()" method="post" onsubmit = "myFunction()">
+<div class = "form">
+<textarea form = "Supportfrm" placeholder = "Enter your issue here..." rows="4" cols="50" style = "background-color: #e0ac69;" required></textarea>
+<br>
+<br>
+<label for = "fname">First name:</label>
+<input type = "text" id = "fname" name = "firstname">
+<br>
+<br>
+<label for = "lname">Last name:</label>
+<input type = "text" id = "lname" name = "lastname">
+<br>
+<br>
+<div class = "email">
+<label for = "email">E-mail:</label>
+<input type = "email" id = "email" name = "email">
+</div>
+<br>
+<input type = "submit" class = "button" onclick="myFunction()" value = "Submit">
+</div>
+</form>
+<!--End-->
+</body>
+</html>
